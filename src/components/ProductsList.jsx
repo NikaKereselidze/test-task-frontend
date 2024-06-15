@@ -24,6 +24,7 @@ export default function ProductsList() {
             <tr>
               <th className="border-b border-b-black">Product Name</th>
               <th className="border-b border-b-black">Email</th>
+              <th className="border-b border-b-black">Status</th>
               <th className="border-b border-b-black">Expires At</th>
             </tr>
           </thead>
@@ -33,6 +34,7 @@ export default function ProductsList() {
                 <tr key={key}>
                   <td className="text-center">{val.name}</td>
                   <td className="text-center">{val.email}</td>
+                  <td className="text-center">{val.status}</td>
                   <td className="text-center">{`${new Date(
                     val.expiresAt
                   ).getFullYear()}-${
